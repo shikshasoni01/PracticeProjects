@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+  
+  
+  
+  <bean id="super1" class="com.productinfo.SuperMarket">  
+	<constructor-arg  value="11" type="int"></constructor-arg> 
+	<constructor-arg  value="Jio Mart"></constructor-arg> 
+	
+</bean>  
+<bean id="super2" class="com.productinfo.SuperMarket">  
+	<constructor-arg  value="22" type="int"></constructor-arg> 
+	<constructor-arg  value="Big bazaar"></constructor-arg> 
+	
+</bean>
+<bean id="super3" class="com.productinfo.SuperMarket">  
+	<constructor-arg  value="33" type="int"></constructor-arg> 
+	<constructor-arg  value="dmart"></constructor-arg> 
+	
+</bean>
+
+<bean id="product1" class="com.productinfo.Product">  
+	<constructor-arg  value="1001" type="int"></constructor-arg> 
+	<constructor-arg  value="chittale Bhakharwadi"></constructor-arg> 
+	<constructor-arg  value="mast khao khush raho" ></constructor-arg> 
+	<constructor-arg  value="180" type="double"></constructor-arg>  
+	<constructor-arg>
+	<ref bean ="super1"></ref>
+	</constructor-arg>
+</bean>  
+  
+    
+<bean id="product2" class="com.productinfo.Product">  
+	<constructor-arg  value="1002" type="int"></constructor-arg> 
+	<constructor-arg  value="Haldiram Bhujia"></constructor-arg> 
+	<constructor-arg  value="mast khao khush raho" ></constructor-arg> 
+	<constructor-arg  value="580" type="double"></constructor-arg>  
+	<constructor-arg>
+	<ref bean ="super2"></ref>
+	</constructor-arg>
+</bean>  
+  
+<bean id="product3" class="com.productinfo.Product">  
+	<constructor-arg  value="1003" type="int"></constructor-arg> 
+	<constructor-arg  value="Kurkure"></constructor-arg> 
+	<constructor-arg  value="kurkure sab me bate" ></constructor-arg> 
+	<constructor-arg  value="180" type="double"></constructor-arg>  
+	<constructor-arg>
+	<ref bean ="super3"></ref>
+	</constructor-arg>
+</bean>  
+
+</beans>

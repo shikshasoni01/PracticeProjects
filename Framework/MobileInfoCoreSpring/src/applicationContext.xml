@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+  
+<bean id="mobile1" class="com.mobileinfo.Mobile">  
+	<property name="id" value="10"></property> 
+	<property name="name" value="iphone 11"></property> 
+	<property name="brand" value="apple"></property> 
+	<property name="price" value="50000"></property>  
+	<property name="colour" value="black"></property>  
+</bean>  
+<bean id="mobile2" class="com.mobileinfo.Mobile">  
+	<property name="id" value="20"></property> 
+	<property name="name" value="Motorola Fusion"></property> 
+	<property name="brand" value="motorola"></property> 
+	<property name="price" value="10000"></property>  
+	<property name="colour" value="blue"></property>   
+</bean>  
+<bean id="mobile3" class="com.mobileinfo.Mobile">  
+	<property name="id" value="30"></property> 
+	<property name="name" value="Z flip "></property> 
+	<property name="brand" value="Samsung"></property> 
+	<property name="price" value="80000"></property>  
+	<property name="colour" value="purple"></property>   
+</bean>  
+
+<bean id="mobile4" class="com.mobileinfo.Mobile">  
+	<property name="id" value="40"></property> 
+	<property name="name" value="realme"></property> 
+	<property name="brand" value="oppo"></property> 
+	<property name="price" value="15000"></property>  
+	<property name="colour" value="black"></property>   
+</bean>  
+<bean id="mobile5" class="com.mobileinfo.Mobile">  
+	<property name="id" value="50"></property> 
+	<property name="name" value="Vivo v40e"></property> 
+	<property name="brand" value="vivo"></property> 
+	<property name="price" value="20000"></property>  
+	<property name="colour" value="white"></property>   
+</bean>  
+<bean id="mobile6" class="com.mobileinfo.Mobile">  
+	<property name="id" value="60"></property> 
+	<property name="name" value="Oppo reno 13"></property> 
+	<property name="brand" value="Oppo"></property> 
+	<property name="price" value="20000"></property>  
+	<property name="colour" value="white"></property>   
+</bean>  
+<bean id="mobile7" class="com.mobileinfo.Mobile">  
+	<property name="id" value="70"></property> 
+	<property name="name" value="Redmi note 14"></property> 
+	<property name="brand" value="Mi"></property> 
+	<property name="price" value="12000"></property>  
+	<property name="colour" value="black"></property>   
+</bean>  
+<bean id="mobile8" class="com.mobileinfo.Mobile">  
+	<property name="id" value="80"></property> 
+	<property name="name" value="Iphone 16 pro max"></property> 
+	<property name="brand" value="apple"></property> 
+	<property name="price" value="150000"></property>  
+	<property name="colour" value="magnetic black"></property>   
+</bean>  
+<bean id="mobile9" class="com.mobileinfo.Mobile">  
+	<property name="id" value="90"></property> 
+	<property name="name" value="One plus nord 13 ce"></property> 
+	<property name="brand" value="one plus"></property> 
+	<property name="price" value="15000"></property>  
+	<property name="colour" value="white"></property>   
+</bean>  
+<bean id="mobile10" class="com.mobileinfo.Mobile">  
+	<property name="id" value="100"></property> 
+	<property name="name" value="Samsung galaxy s24"></property> 
+	<property name="brand" value="samsung"></property> 
+	<property name="price" value="99000"></property>  
+	<property name="colour" value="silver"></property>   
+</bean>  
+  <bean id="mobile11" class="com.mobileinfo.Mobile">  
+	<constructor-arg  value="10"></constructor-arg > 
+	<constructor-arg  value="iphone 11"></constructor-arg > 
+	<constructor-arg   value="apple"></constructor-arg > 
+	<constructor-arg   value="50000"></constructor-arg >  
+	<constructor-arg   value="black"></constructor-arg >  
+</bean>  
+<bean id="mobile22" class="com.mobileinfo.Mobile">  
+	<constructor-arg value="20"></constructor-arg > 
+	<constructor-arg  value="Motorola Fusion"></constructor-arg > 
+	<constructor-arg   value="motorola"></constructor-arg > 
+	<constructor-arg   value="10000"></constructor-arg >  
+	<constructor-arg   value="blue"></constructor-arg >   
+</bean>  
+<bean id="mobile33" class="com.mobileinfo.Mobile">  
+	<constructor-arg  name="id" value="30"></constructor-arg > 
+	<constructor-arg  name="name" value="Z flip "></constructor-arg > 
+	<constructor-arg  name="brand" value="Samsung"></constructor-arg > 
+	<constructor-arg  name="price" value="80000"></constructor-arg >  
+	<constructor-arg  name="colour" value="purple"></constructor-arg >   
+</bean>  
+
+<bean id="mobile44" class="com.mobileinfo.Mobile">  
+	<constructor-arg  name="id" value="40"></constructor-arg > 
+	<constructor-arg  name="name" value="realme"></constructor-arg > 
+	<constructor-arg  name="brand" value="oppo"></constructor-arg > 
+	<constructor-arg  name="price" value="15000"></constructor-arg >  
+	<constructor-arg  name="colour" value="black"></constructor-arg >   
+</bean>  
+<bean id="mobile55" class="com.mobileinfo.Mobile">  
+	<constructor-arg  name="id" value="50"></constructor-arg > 
+	<constructor-arg  name="name" value="Vivo v40e"></constructor-arg > 
+	<constructor-arg  name="brand" value="vivo"></constructor-arg > 
+	<constructor-arg  name="price" value="20000"></constructor-arg >  
+	<constructor-arg  name="colour" value="white"></constructor-arg >   
+</bean>  
+<bean id="mobile66" class="com.mobileinfo.Mobile">  
+	<constructor-arg  name="id" value="60"></constructor-arg > 
+	<constructor-arg  name="name" value="Oppo reno 13"></constructor-arg > 
+	<constructor-arg  name="brand" value="Oppo"></constructor-arg > 
+	<constructor-arg  name="price" value="20000"></constructor-arg >  
+	<constructor-arg  name="colour" value="white"></constructor-arg >   
+</bean>  
+<bean id="mobile77" class="com.mobileinfo.Mobile">  
+	<constructor-arg  name="id" value="70"></constructor-arg > 
+	<constructor-arg  name="name" value="Redmi note 14"></constructor-arg > 
+	<constructor-arg  name="brand" value="Mi"></constructor-arg > 
+	<constructor-arg  name="price" value="12000"></constructor-arg >  
+	<constructor-arg  name="colour" value="black"></constructor-arg >   
+</bean>  
+<bean id="mobile88" class="com.mobileinfo.Mobile">  
+	<constructor-arg  name="id" value="80"></constructor-arg > 
+	<constructor-arg  name="name" value="Iphone 16 pro max"></constructor-arg > 
+	<constructor-arg  name="brand" value="apple"></constructor-arg > 
+	<constructor-arg  name="price" value="150000"></constructor-arg >  
+	<constructor-arg name="colour" value="magnetic black"></constructor-arg>   
+</bean>  
+<bean id="mobile99" class="com.mobileinfo.Mobile">  
+	<constructor-arg name="id" value="90"></constructor-arg> 
+	<constructor-arg name="name" value="One plus nord 13 ce"></constructor-arg> 
+	<constructor-arg name="brand" value="one plus"></constructor-arg> 
+	<constructor-arg name="price" value="15000"></constructor-arg>  
+	<constructor-arg name="colour" value="white"></constructor-arg>   
+</bean>  
+<bean id="mobile100" class="com.mobileinfo.Mobile">  
+	<constructor-arg name="id" value="100"></constructor-arg> 
+	<constructor-arg name="name" value="Samsung galaxy s24"></constructor-arg> 
+	<constructor-arg name="brand" value="samsung"></constructor-arg> 
+	<constructor-arg name="price" value="99000"></constructor-arg>  
+	<contructor-arg name="colour" value="silver"></contructor-arg>   
+</bean>  
+  
+  
+</beans>
