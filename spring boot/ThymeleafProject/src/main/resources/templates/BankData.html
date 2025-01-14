@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bank Details</title>
+</head>
+<body>
+	<center><h2>Bank Directory</h2>
+	<table>
+		<thead>
+		<tr>
+			<th>Id</th>
+			<th>Bank Name</th>
+			<th>Branch</th>
+			<th>IFSC code</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr th:each="bank:${banks}">
+		<td th:text="${bank.id}"></td>
+		<td th:text="${bank.name}"></td>
+		<td th:text="${bank.branch}"></td>
+		<td th:text="${bank.ifsc}"></td>
+		</tr>
+		</tbody>
+	</table>
+	</center>
+</body>
+</html>
